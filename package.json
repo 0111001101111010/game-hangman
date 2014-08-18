@@ -1,0 +1,33 @@
+{
+  "name": "game-hangman",
+  "version": "0.0.0",
+  "main": "lib/game-hangman.js",
+  "description": "generic hangman game, renders in the terminal. ",
+  "homepage": "https://github.com/stanzheng/game-hangman",
+  "bugs": "https://github.com/stanzheng/game-hangman/issues",
+  "author": {
+    "name": "Stanley Zheng",
+    "email": "szhen002@gmail.com",
+    "url": "stanzheng.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stanzheng/game-hangman"
+  },
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "keywords": [],
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.1",
+    "jshint-stylish": "^0.2.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  }
+}
