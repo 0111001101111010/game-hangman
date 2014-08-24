@@ -9,4 +9,9 @@ describe('Word Functionality', function(){
           assert.equal(hangman.awesome(),"awesome",'Is Not Awesome');
         });
   });
+  describe('Word Functions', function(){
+        it('Count Words', function(){
+          assert.equal(hangman.countWords(),"awesome",'Is Not Awesome');
+        });
+  });
 });
