@@ -1,17 +1,13 @@
-/*global describe, it */
+/*global describe, it, done */
 var assert = require('chai').assert;
 var hangman = require('../lib/hangman');
 
 describe('Word Functionality', function(){
 
-  describe('Before', function(){
-        it('Awesome', function(){
-          assert.equal(hangman.awesome(),"awesome",'Is Not Awesome');
-        });
-  });
-  describe('Word Functions', function(){
+  describe('Word Functions', function(done){
         it('Count Words', function(){
-          assert.equal(hangman.countWords(),"awesome",'Is Not Awesome');
+          assert.notEqual(hangman.getWordList(), null,'Is Not Null');
+          done();
         });
   });
 });
