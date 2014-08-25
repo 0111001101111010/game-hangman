@@ -1,6 +1,6 @@
 {
   "name": "game-hangman",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/game-hangman.js",
   "description": "generic hangman game, renders in the terminal. ",
   "homepage": "https://github.com/stanzheng/game-hangman",
