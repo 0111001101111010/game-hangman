@@ -1,10 +1,11 @@
-//var hangman = require('./lib/hangman');
+var hangman = require('./lib/hangman');
 var fs = require('fs');
 var readline = require('readline');
+//var _ = require('lodash');
 
 
 (function playGame() {
-  var words;
+  var words, size;
   words = fs.readFileSync('./assets/words.txt', 'utf-8');
   words = words.split('\n');
 
@@ -14,13 +15,15 @@ var readline = require('readline');
     });
 
       rl.question("What Size of the Word? ", function(answer) {
-      if (typeof parseInt(answer) === 'number'){
-        console.log("Starting Game for Word Size:", answer);
-        rl.close();
-      }
-      else {
-        console.log("please try again");
-        playGame();
-      }
-    });// jshint ignore:line
+        size = parseInt(answer);
+        if ((typeof size === 'number') && (!isNaN(size))){
+          console.log("Starting Game for Word Size:", answer);
+          hangman.pickWord(words,size);
+          rl.close();
+        }
+        else {
+          console.log("please try again");
+          playGame();
+        }
+    });
 })();
