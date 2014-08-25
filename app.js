@@ -10,6 +10,7 @@ var render = function (chosenWord,letters) {
   console.log(obj);
   new_letter = hangman.getLetter();
   //check if letter is usable, then restart
+  //#todo frozen here
   setTimeout(function playround(){
     if (!_.contains(letters,new_letter)){
       console.log("Thanks! this letter was added: " + new_letter);
